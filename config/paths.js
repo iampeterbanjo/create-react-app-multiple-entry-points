@@ -68,7 +68,7 @@ const resolveModule = (resolveFn, filePath) => {
 var appPages = require(resolveApp('package.json')).appPages;
 
 if (appPages === undefined || appPages === null || appPages.length === 0) {
-    console.log("You must defined the entry points in your package.json using the parameter 'appPages'.");
+    console.log("You must define entry points in your package.json using the parameter 'appPages'.");
     process.exit(1);
 } else appPages = appPages.map((ep) => { 
     return { 
